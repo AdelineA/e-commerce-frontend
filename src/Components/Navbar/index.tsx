@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Logo from "./Logo";
-import NavbarButtons from "./NavbarButtons";
 import NavbarLinks from "./NavbarLinks";
+import NavbarIcons from "./NavbarIcons";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="hidden md:flex justify-between items-center">
         <Logo />
         <NavbarLinks />
-        <NavbarButtons />
+        <NavbarIcons />
       </div>
 
       <div className="flex justify-between md:hidden">
@@ -26,10 +26,10 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="hidden absolute top-16 w-full bg-white z-10">
+        <div className="md:hidden absolute top-16 w-full bg-white z-10">
           <div className="flex flex-col items-end space-y-4 p-2">
             <NavbarLinks />
-            <NavbarButtons />
+            <NavbarIcons />
           </div>
         </div>
       )}
