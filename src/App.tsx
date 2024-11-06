@@ -1,15 +1,16 @@
 import { RouterProvider } from "react-router-dom";
 import router from "./Components/Routes/Routes";
+import "./index.css";
 
 function App() {
   return (
-    <>
+    <div className="content-wrapper">
       <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet"
       />
       <RouterProvider router={router} />
-    </>
+    </div>
   );
 }
 
