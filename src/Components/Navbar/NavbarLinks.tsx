@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const navLinks = [
   {
@@ -24,7 +24,15 @@ const NavbarLinks = () => {
       <ul className="flex flex-col md:flex-row gap-5 font-normal text-base justify-center text-center">
         {navLinks.map((link) => (
           <li key={link.title} className="hover:underline">
-            <Link to={link.target}>{link.title}</Link>
+            <NavLink
+              to={link.target}
+              end
+              className={({ isActive }) =>
+                isActive ? "text-red-500 underline font-bold" : ""
+              }
+            >
+              {link.title}
+            </NavLink>
           </li>
         ))}
       </ul>
