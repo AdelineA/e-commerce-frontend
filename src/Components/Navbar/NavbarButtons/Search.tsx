@@ -2,7 +2,7 @@ import SearchIcon from "../../../assets/Icons/SearchIcon";
 
 const Search = () => {
   return (
-    <div className="bg-gray-200 py-3 rounded-lg flex gap-4 px-4">
+    <div className="bg-gray-200 p-2 rounded-lg xl:flex gap-4 hidden">
       <input
         type="text"
         placeholder="What are you looking for?"

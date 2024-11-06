@@ -4,10 +4,12 @@ import Search from "./Search";
 
 const index = () => {
   return (
-    <div className="flex gap-4 justify-center items-center">
+    <div className="flex xl:flex-row flex-col gap-4 justify-center items-center">
       <Search />
-      <Favorites />
-      <AddToCart />
+      <div className="flex">
+        <Favorites />
+        <AddToCart />
+      </div>
     </div>
   );
 };
