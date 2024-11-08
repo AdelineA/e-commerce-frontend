@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     errorElement: <Navigate to="/404" />,
     children: [
       {
-        path: "",
+        index: true,
         element: <Homepage />,
       },
       {
@@ -28,11 +28,11 @@ const router = createBrowserRouter([
         path: "/signup",
         element: <SignUp />,
       },
+      {
+        path: "*",
+        element: <ErrorPage />,
+      },
     ],
-  },
-  {
-    path: "/404",
-    element: <ErrorPage />,
   },
 ]);
 export default router;
