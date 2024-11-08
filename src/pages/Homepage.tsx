@@ -1,4 +1,4 @@
-import HeroContentGrid from "../HeroContentGrid";
+import HeroContentGrid from "../Components/HeroContentGrid";
 
 const Homepage = () => {
   return (

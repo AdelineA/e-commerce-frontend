@@ -13,8 +13,8 @@ const HeroContentGrid = () => {
     slidesToScroll: 1,
   };
   return (
-    <section className="content-wrapper flex gap-10 w-full">
-      <div className="w-1/3 flex justify-center items-center">
+    <section className="flex justify-between w-full">
+      <div className="text-center">
         <CategoryGrid />
       </div>
       <div className="w-2/3">
