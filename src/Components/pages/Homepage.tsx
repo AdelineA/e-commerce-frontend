@@ -1,5 +1,11 @@
+import HeroContentGrid from "../HeroContentGrid";
+
 const Homepage = () => {
-  return <div>Welcome to our page</div>;
+  return (
+    <div>
+      <HeroContentGrid />
+    </div>
+  );
 };
 
 export default Homepage;

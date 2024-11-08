@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .content-wrapper {
+    @apply 2xl:w-[79.16%] md:w-[85.6%] w-[90.6%] mx-auto;
+  }
+}
