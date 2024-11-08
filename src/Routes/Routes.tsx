@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import Layout from "./Layout";
 import Homepage from "../pages/Homepage";
 import Contact from "../pages/Contact";
@@ -10,7 +10,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    errorElement: <ErrorPage />,
+    errorElement: <Navigate to="/404" />,
     children: [
       {
         path: "",
@@ -29,6 +29,10 @@ const router = createBrowserRouter([
         element: <SignUp />,
       },
     ],
+  },
+  {
+    path: "/404",
+    element: <ErrorPage />,
   },
 ]);
 export default router;
