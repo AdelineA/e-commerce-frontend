@@ -1,9 +1,9 @@
 import HeroCard from "./Card";
-import data from "../../../public/data/data.json";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import CategoryGrid from "./CategoryGrid";
+import data from "./../../../public/data.json";
+import CategorySidebar from "./CategorySidebar/index";
 const HeroContentGrid = () => {
   const logoCarousel = {
     dots: true,
@@ -13,13 +13,13 @@ const HeroContentGrid = () => {
     slidesToScroll: 1,
   };
   return (
-    <section className="flex justify-between w-full">
-      <div className="text-center">
-        <CategoryGrid />
+    <section className="flex lg:flex-row lg:justify-between w-full py-10 flex-col items-center">
+      <div>
+        <CategorySidebar />
       </div>
-      <div className="w-2/3">
+      <div className="lg:w-[72%] w-full">
         <Slider {...logoCarousel}>
-          {data.map((item, index) => (
+          {data.products.map((item, index) => (
             <div key={index} className="flex bg-black h-fit">
               <HeroCard {...item} />;
             </div>

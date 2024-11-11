@@ -1,14 +1,7 @@
-export type Content = {
+export type SubCategory = {
   id: number;
   title: string;
-  description: string;
-  image: string;
-  category: string;
-  date: string;
-};
-
-export type Category = {
-  id: number;
-  name: string;
-  content: Content[];
+  subCategory: {
+    title: string;
+  }[];
 };
