@@ -13,11 +13,11 @@ const HeroContentGrid = () => {
     slidesToScroll: 1,
   };
   return (
-    <section className="flex lg:flex-row lg:justify-between w-full py-10 flex-col items-center">
+    <section className="flex md:flex-row md:justify-between w-full py-10 flex-col gap-5">
       <div>
         <CategorySidebar />
       </div>
-      <div className="lg:w-[72%] w-full">
+      <div className="md:w-[72%] w-full">
         <Slider {...logoCarousel}>
           {data.products.map((item, index) => (
             <div key={index} className="flex bg-black h-fit">

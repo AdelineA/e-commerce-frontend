@@ -40,27 +40,11 @@
   "categories": [
     {
       "id": 1,
-      "title": "Electronics",
-      "subcategory": [
-        {
-          "title": "Smartphones"
-        },
-        {
-          "title": "Laptops"
-        }
-      ]
+      "title": "Electronics"
     },
     {
       "id": 2,
-      "title": "Fashion",
-      "subcategory": [
-        {
-          "title": "Men's Clothing"
-        },
-        {
-          "title": "Women's Accessories"
-        }
-      ]
+      "title": "Fashion"
     },
     {
       "id": 3,
