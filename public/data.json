@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "image": "images/desktop.png",
+    "title": "Product 1",
+    "oldPrice": 29.99,
+    "newPrice": 19.99,
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "image": "images/desktop.png",
+    "title": "Product 2",
+    "oldPrice": 49.99,
+    "newPrice": 39.99,
+    "rating": 4.0
+  },
+  {
+    "id": 3,
+    "image": "images/desktop.png",
+    "title": "Product 3",
+    "oldPrice": 19.99,
+    "newPrice": 14.99,
+    "rating": 3.8
+  },
+  {
+    "id": 4,
+    "image": "images/desktop.png",
+    "title": "Product 4",
+    "oldPrice": 99.99,
+    "newPrice": 79.99,
+    "rating": 4.8
+  },
+  {
+    "id": 5,
+    "image": "images/desktop.png",
+    "title": "Product 5",
+    "oldPrice": 59.99,
+    "newPrice": 49.99,
+    "rating": 4.3
+  }
+]
