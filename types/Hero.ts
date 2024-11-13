@@ -1,8 +1,7 @@
 export type HeroContent = {
-  icon: string;
   name: string;
-  title: string;
-  image: string;
+  description: string;
+  imageUrl: string;
 };
 
 export type Hero = {
