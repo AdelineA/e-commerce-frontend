@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import useCategories from "../../Hook/useCategories";
 import HeroCard from "./Card";
 
+const imageUrl = import.meta.env.VITE_IMAGE_URL || "";
+
 const HeroContent = () => {
   const logoCarousel = {
     dots: true,
@@ -30,7 +32,7 @@ const HeroContent = () => {
               <HeroCard
                 name={category.name}
                 description={category.description}
-                imageUrl={`http://localhost:8000${category.imageUrl}`}
+                imageUrl={`${imageUrl}${category.imageUrl}`}
               />
             </div>
           );
