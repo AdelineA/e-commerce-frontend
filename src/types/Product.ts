@@ -1,9 +1,9 @@
 export type ProductCard = {
   title: string;
-  newPrice: number;
-  oldPrice: number;
-  rating: number;
-  image: string;
+  price: number;
+  imageUrl: string;
+  description?: string;
+  categoryId: string;
 };
 
 export type Product = {

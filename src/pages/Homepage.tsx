@@ -5,7 +5,9 @@ const Homepage = () => {
   return (
     <>
       <HeroContentGrid />
-      <ProductCardGrid id={""} title={"Best Selling Products"} content={[]} />
+      <div className="lg:pt-52 pt-[570px]">
+        <ProductCardGrid id={""} title={"Best Selling Products"} content={[]} />
+      </div>
     </>
   );
 };
