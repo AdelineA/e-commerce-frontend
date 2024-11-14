@@ -1,10 +1,12 @@
 import ProductCardGrid from "../Components/ProductCardGrid";
+import HeroContentGrid from "../Components/HeroContentGrid";
 
 const Homepage = () => {
   return (
-    <div>
+    <>
+      <HeroContentGrid />
       <ProductCardGrid id={""} title={"Best Selling Products"} content={[]} />
-    </div>
+    </>
   );
 };
 
