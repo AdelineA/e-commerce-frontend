@@ -1,6 +1,6 @@
 import View from "../../assets/Icons/View";
 import WishList from "../../assets/Icons/Wishlist";
-import type { ProductCard } from "../../types/Product";
+import type { ProductCard } from "../../../types/Product";
 
 const ProductCard = ({ imageUrl, title, price }: ProductCard) => {
   return (

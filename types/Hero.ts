@@ -1,6 +1,6 @@
 export type HeroContent = {
   name: string;
-  description: string;
+  description?: string;
   imageUrl: string;
 };
 

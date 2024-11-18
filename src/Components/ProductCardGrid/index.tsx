@@ -1,5 +1,5 @@
 import useProducts from "../../Hook/useProducts";
-import { Product } from "../../types/Product";
+import { Product } from "../../../types/Product";
 import ProductCard from "./Card";
 
 const imageUrl = import.meta.env.VITE_IMAGE_URL || "";
