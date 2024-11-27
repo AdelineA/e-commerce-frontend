@@ -6,7 +6,7 @@ const Homepage = () => {
   return (
     <>
       <HeroContentGrid />
-      <div className="lg:pt-52 pt-[570px]">
+      <div className="pt-52">
         <Category title={"Categories"} />
       </div>
       <div className="w-full pt-10 ">

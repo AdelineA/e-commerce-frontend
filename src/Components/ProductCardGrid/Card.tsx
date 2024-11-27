@@ -1,14 +1,27 @@
 import View from "../../assets/Icons/View";
 import WishList from "../../assets/Icons/Wishlist";
 import type { ProductCard } from "../../../types/Product";
+import { addToWishlist } from "../../store/wishlistSlice";
+import { AppDispatch } from "../../store/store";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
-const ProductCard = ({ imageUrl, title, price }: ProductCard) => {
+const ProductCard = ({ id, imageUrl, title, price }: ProductCard) => {
+  const dispatch = useDispatch<AppDispatch>();
+  const navigate = useNavigate();
+  const handleAddToWishlist = () => {
+    dispatch(addToWishlist({ id, imageUrl, title, price }));
+    navigate("/wishlist");
+  };
   return (
     <div className="rounded-md shadow-md">
       <div className="bg-gray-100 flex justify-center h-2/3 py-5">
         <img src={imageUrl} alt="product" width={200} />
         <div className="flex flex-col gap-4 relative top-0 lg:-right-10 -right-5 items-center">
-          <button className="bg-white p-2 rounded-full w-10 h-10">
+          <button
+            onClick={handleAddToWishlist}
+            className="bg-white p-2 rounded-full w-10 h-10"
+          >
             <WishList />
           </button>
           <button className="bg-white p-2 rounded-full h-10 w-10">
