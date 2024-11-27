@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import WishList from "../../../assets/Icons/Wishlist";
 
 const Favorites = () => {
   return (
-    <div>
+    <Link to="/wishlist">
       <WishList />
-    </div>
+    </Link>
   );
 };
 
