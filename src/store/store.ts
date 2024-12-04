@@ -6,7 +6,7 @@ import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/es/storage";
 
 const persistConfig = {
-  key: "root",
+  key: "wishlist",
   storage,
 };
 const persistedWishlsitReducer = persistReducer(persistConfig, wishlistReducer);

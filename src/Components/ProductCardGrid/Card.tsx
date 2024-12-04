@@ -4,14 +4,12 @@ import type { ProductCard } from "../../../types/Product";
 import { addToWishlist } from "../../store/wishlistSlice";
 import { AppDispatch } from "../../store/store";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ id, imageUrl, title, price }: ProductCard) => {
   const dispatch = useDispatch<AppDispatch>();
-  const navigate = useNavigate();
   const handleAddToWishlist = () => {
     dispatch(addToWishlist({ id, imageUrl, title, price }));
-    navigate("/wishlist");
+    alert(`${title} Added to wishlist`);
   };
   return (
     <div className="rounded-md shadow-md">

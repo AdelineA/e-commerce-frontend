@@ -8,7 +8,7 @@ const wishlistSlice = createSlice({
   },
   reducers: {
     addToWishlist(state, action) {
-      const productExist = state.wishlist.find(
+      const productExist = state.wishlist.some(
         (product) => product.id === action.payload.id
       );
       if (!productExist) {
