@@ -1,0 +1,80 @@
+{
+  "sections": [
+    {
+      "title": "Exclusive",
+      "content": {
+        "description": "Subscribe\nGet 10% off your first order",
+        "inputPlaceholder": "Enter your email",
+        "buttonText": "→"
+      }
+    },
+    {
+      "title": "Support",
+      "content": {
+        "address": "111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.",
+        "email": "exclusive@gmail.com",
+        "phone": "+88015-88888-9999"
+      }
+    },
+    {
+      "title": "Account",
+      "links": [
+        { "name": "My Account", "url": "/my-account" },
+        { "name": "Login / Register", "url": "/login-register" },
+        { "name": "Cart", "url": "/cart" },
+        { "name": "Wishlist", "url": "/wishlist" },
+        { "name": "Shop", "url": "/shop" }
+      ]
+    },
+    {
+      "title": "Quick Link",
+      "links": [
+        { "name": "Privacy Policy", "url": "/privacy-policy" },
+        { "name": "Terms Of Use", "url": "/terms-of-use" },
+        { "name": "FAQ", "url": "/faq" },
+        { "name": "Contact", "url": "/contact" }
+      ]
+    },
+    {
+      "title": "Download App",
+      "content": {
+        "description": "Save $3 with App New User Only",
+        "qrCodes": [
+          {
+            "platform": "Google Play",
+            "url": "https://play.google.com",
+            "image": "src/assets/logos/googlep.jpeg"
+          },
+          {
+            "platform": "App Store",
+            "url": "https://apple.com/app-store",
+            "image": "src/assets/logos/googlep.jpeg"
+          }
+        ]
+      },
+      "socialMedia": [
+        {
+          "platform": "Facebook",
+          "icon": "src/assets/logos/googlep.jpeg",
+          "url": "https://facebook.com"
+        },
+        {
+          "platform": "Twitter",
+          "icon": "twitter-icon.png",
+          "url": "https://twitter.com"
+        },
+        {
+          "platform": "Instagram",
+          "icon": "instagram-icon.png",
+          "url": "https://instagram.com"
+        },
+        {
+          "platform": "LinkedIn",
+          "icon": "linkedin-icon.png",
+          "url": "https://linkedin.com"
+        }
+      ]
+    }
+  ],
+  "footerNote": "© Copyright Rimel 2022. All right reserved"
+}
