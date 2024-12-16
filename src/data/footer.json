@@ -48,29 +48,29 @@
           {
             "platform": "App Store",
             "url": "https://apple.com/app-store",
-            "image": "src/assets/logos/googlep.jpeg"
+            "image": "src/assets/logos/apples.png"
           }
         ]
       },
       "socialMedia": [
         {
           "platform": "Facebook",
-          "icon": "src/assets/logos/googlep.jpeg",
+          "icon": "src/assets/logos/fb.png",
           "url": "https://facebook.com"
         },
         {
           "platform": "Twitter",
-          "icon": "twitter-icon.png",
+          "icon": "src/assets/logos/x.png",
           "url": "https://twitter.com"
         },
         {
           "platform": "Instagram",
-          "icon": "instagram-icon.png",
+          "icon": "src/assets/logos/ig.png",
           "url": "https://instagram.com"
         },
         {
           "platform": "LinkedIn",
-          "icon": "linkedin-icon.png",
+          "icon": "src/assets/logos/youtube.jpeg",
           "url": "https://linkedin.com"
         }
       ]
