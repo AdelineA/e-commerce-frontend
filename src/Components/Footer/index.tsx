@@ -4,7 +4,7 @@ import { FooterSection } from "../../../types/Footer";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white py-10 font-inter text-xs">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 px-4 md:px-10 content-wrapper">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 content-wrapper">
         {footer.sections.map((section: FooterSection, index: number) => (
           <div key={index}>
             <h3 className="font-bold text-lg mb-4">{section.title}</h3>
