@@ -6,6 +6,7 @@ export type ProductCard = {
   description?: string;
   categoryId: string;
   status: string;
+  quantity?: number;
 };
 
 export type Product = {

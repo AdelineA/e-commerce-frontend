@@ -14,7 +14,7 @@ const ProductCard = ({ id, imageUrl, title, price }: ProductCard) => {
   };
 
   const handleAddToCart = () => {
-    dispatch(addToCart({ productId: id, quantity: 1 }));
+    dispatch(addToCart({ productId: id, quantity: 1, imageUrl, title, price }));
     alert(`${title} Added to cart`);
   };
   return (
