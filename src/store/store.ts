@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import categoryReducer from "./categorySlice";
 import productReducer from "./productSlice";
 import wishlistReducer from "./wishlistSlice";
+import addToCartReducer from "./addToCartSlice";
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/es/storage";
 
@@ -15,6 +16,7 @@ const store = configureStore({
     categories: categoryReducer,
     products: productReducer,
     wishlist: persistedWishlsitReducer,
+    addToCart: addToCartReducer,
   },
 });
 export const persistor = persistStore(store);

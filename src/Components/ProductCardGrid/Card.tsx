@@ -1,15 +1,21 @@
-import View from "../../assets/Icons/View";
 import WishList from "../../assets/Icons/Wishlist";
 import type { ProductCard } from "../../../types/Product";
 import { addToWishlist } from "../../store/wishlistSlice";
 import { AppDispatch } from "../../store/store";
 import { useDispatch } from "react-redux";
+import Cart from "../../assets/Icons/Cart";
+import { addToCart } from "../../store/addToCartSlice";
 
 const ProductCard = ({ id, imageUrl, title, price }: ProductCard) => {
   const dispatch = useDispatch<AppDispatch>();
   const handleAddToWishlist = () => {
     dispatch(addToWishlist({ id, imageUrl, title, price }));
     alert(`${title} Added to wishlist`);
+  };
+
+  const handleAddToCart = () => {
+    dispatch(addToCart({ productId: id, quantity: 1 }));
+    alert(`${title} Added to cart`);
   };
   return (
     <div className="rounded-md shadow-md">
@@ -22,8 +28,11 @@ const ProductCard = ({ id, imageUrl, title, price }: ProductCard) => {
           >
             <WishList />
           </button>
-          <button className="bg-white p-2 rounded-full h-10 w-10">
-            <View />
+          <button
+            onClick={handleAddToCart}
+            className="bg-white p-2 rounded-full h-10 w-10"
+          >
+            <Cart />
           </button>
         </div>
       </div>
