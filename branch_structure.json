@@ -1,0 +1,33 @@
+{
+  "default_branch": "dev",
+  "branches": [
+    "dev",
+    "ft/add-to-cart",
+    "ft/hero-section",
+    "ft/navbar",
+    "ft/product-section",
+    "ft/routing",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "dev": null,
+    "ft/add-to-cart": "dev",
+    "ft/hero-section": "dev",
+    "ft/navbar": "dev",
+    "ft/product-section": "dev",
+    "ft/routing": "dev",
+    "main": "dev",
+    "origin": "dev"
+  },
+  "order": [
+    "dev",
+    "ft/add-to-cart",
+    "ft/hero-section",
+    "ft/navbar",
+    "ft/product-section",
+    "ft/routing",
+    "main",
+    "origin"
+  ]
+}
