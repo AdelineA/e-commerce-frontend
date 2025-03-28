@@ -6,6 +6,8 @@ import About from "../pages/About";
 import SignUp from "../pages/SignUp";
 import ErrorPage from "../pages/404";
 import WishListPage from "../pages/WishList";
+import DetailPage from "../pages/DetailPage";
+import Shop from "../pages/Shop";
 
 const router = createBrowserRouter([
   {
@@ -30,8 +32,16 @@ const router = createBrowserRouter([
         element: <WishListPage />,
       },
       {
+        path: "/shop",
+        element: <Shop />,
+      },
+      {
         path: "/signup",
         element: <SignUp />,
+      },
+      {
+        path: "/:slug",
+        element: <DetailPage />,
       },
       {
         path: "*",

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { HeroContent } from "../../../types/Hero";
 
 const HeroCard = ({ name, description, imageUrl }: HeroContent) => {
@@ -18,7 +19,9 @@ const HeroCard = ({ name, description, imageUrl }: HeroContent) => {
         </div>
         <p className="font-semibold text-5xl font-inter">{description}</p>
         <div className="pt-5">
-          <button className="hover:underline text-start ">Shop Now</button>
+          <Link to="/shop" className="hover:underline text-start ">
+            Shop Now
+          </Link>
           <button className="ml-8">→</button>
         </div>
       </div>
